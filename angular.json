@@ -31,9 +31,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/boostrap/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/boostrap/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -127,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "carShop"
+  "defaultProject": "carShop",
+  "cli": {
+    "analytics": "cfed5f95-cdc1-43e9-a1ba-0b47e0fd1a4d"
+  }
 }
