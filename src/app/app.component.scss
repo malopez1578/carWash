@@ -1,54 +1,5 @@
-.bgimage {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  background: url("/assets/images/fondo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.c-gridCont {
-    display: grid;
-    grid-template: max-content / repeat(auto-fit, minmax(220px, 1fr));
-    justify-content: center;
-    gap: 1rem;
-    padding: 1.5rem;
-}
-.sectionBg {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 250px;
-  background: url("/assets/images/fondo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.bgimage h5,
-.bgimage p, .sectionBg h3 {
-  color: white;
-  text-shadow: 2px 2px #333;
-}
-.c-footer {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.c-gridGallery{
+.o-main{
   display: grid;
-  grid-template: max-content / 1fr 1fr;
-  gap: .5rem;
-  & img {
-
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+  grid-template: max-content 1fr max-content / 1fr;
+  min-height: 100vh;
 }

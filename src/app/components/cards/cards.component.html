@@ -1,0 +1,8 @@
+<div class="card">
+  <img [src]="Card.url" class="card-img-top" alt={{Card.name}}>
+  <div class="card-body">
+    <h5 class="card-title">{{Card.title}}</h5>
+    <p class="card-text">{{Card.text}}</p>
+    <a [routerLink]="['/productos', Card.id]" class="btn btn-primary">Ver detalle</a>
+  </div>
+</div>

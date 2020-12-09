@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CarWash</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['']" routerLinkActive="active" aria-current="page">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['nosotros']" routerLinkActive="active" >Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['productos']" routerLinkActive="active">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['servicios']" routerLinkActive="active">Servicios</a>
+        </li>
+        <li>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+        Iniciar sesión
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">INiciar sesión</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <poli-form-user></poli-form-user>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar datos</button>
+      </div>
+    </div>
+  </div>
+</div>
